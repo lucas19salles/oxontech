@@ -6,6 +6,7 @@
 
 body {
   background: #e1e1e1;
+  font-family: "Oxygen", sans-serif;
 }
 
 .bg-fundo {
@@ -59,7 +60,6 @@ nav a {
   font-size: 1rem;
   color: #f1f1f1;
   padding: 8px 10px;
-  font-family: "Oxygen", sans-serif;
 }
 
 nav a:hover {
@@ -85,12 +85,10 @@ nav a:hover {
 .informacao h1 {
   color: #fff;
   font-size: 2.4rem;
-  font-family: "Oxygen", sans-serif;
 }
 
 .introducao p {
   color: #fff;
-  font-family: "Oxygen", sans-serif;
   line-height: 1.4;
   margin-top: 20px;
   font-size: 0.875rem;
@@ -125,6 +123,18 @@ nav a:hover {
   text-align: center;
 }
 
+.title_services {
+  font-size: 0.875rem;
+  color: #0000ff;
+  margin: 10px 0;
+}
+
+.title_services_info {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
 .galery_services {
   display: flex;
 }
@@ -137,10 +147,34 @@ nav a:hover {
 }
 
 .solution {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 300px;
   height: auto;
   background: #fff;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
   margin: 10px;
+  padding: 20px;
+}
+
+.solution h2 {
+  font-size: 0.875rem;
+  margin: 10px 0;
+}
+
+.solution p {
+  font-size: 0.725rem;
+  color: #aaa;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.solution a {
+  font-size: 0.875rem;
+  color: #0000ff;
+  font-weight: 700;
 }
 
 .solution img {
