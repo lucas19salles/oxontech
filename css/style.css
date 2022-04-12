@@ -37,7 +37,7 @@ img {
 }
 
 header {
-  max-width: 1070px;
+  max-width: 1100px;
   width: 100vw;
   margin: 0 auto;
 }
@@ -69,7 +69,7 @@ nav a:hover {
 
 /* Section Information */
 .template {
-  max-width: 1070px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -114,7 +114,7 @@ nav a:hover {
 
 /* Services */
 .services {
-  max-width: 1070px;
+  max-width: 1100px;
   margin: 0 auto 40px auto;
 }
 
@@ -124,7 +124,7 @@ nav a:hover {
 }
 
 .title_services {
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: #0000ff;
   margin: 10px 0;
 }
@@ -143,14 +143,14 @@ nav a:hover {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 1070px;
+  max-width: 1100px;
 }
 
 .solution {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 300px;
+  width: 340px;
   height: auto;
   background: #fff;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
@@ -195,7 +195,7 @@ nav a:hover {
 .desempenho {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1070px;
+  max-width: 1100px;
   margin: 0 auto;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -247,7 +247,7 @@ p.bar {
   width: 100%;
 }
 
-@media (max-width: 490px) {
+@media (max-width: 520px) {
   .logo {
     margin: 20px auto 0 auto;
   }
@@ -287,9 +287,10 @@ p.bar {
   .desempenho {
     display: flex;
     flex-direction: column;
+    padding: 0;
   }
 
-  .desempenho_perfil img {
-    margin: 0 auto;
+  .resultados h2 {
+    margin-top: 10px;
   }
 }
