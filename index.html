@@ -20,8 +20,11 @@
           <img src="./img/logo.png" alt="logotipo do site">
         </div>
 
-        <nav>
-          <ul>
+        <nav id="nav">
+          <button id="btn_mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+            <span id="hamburger"></span>
+          </button>
+          <ul id="menu" role="menu">
             <li><a href="#home">Home</a></li>
             <li><a href="#aboutus">Quem Somos</a></li>
             <li><a href="#services">Serviços</a></li>
@@ -31,7 +34,7 @@
       </div>
     </header>
 
-    <section class="template">
+    <section id="aboutus" class="template">
       <div class="introducao">
         <div class="informacao">
           <h1>IT Solutions & Business Services Company</h1>
@@ -47,7 +50,7 @@
     </section>
   </section>
 
-  <section class="services">
+  <section id="services" class="services">
     <div class="title_services">Our Services</div>
     <div class="title_services_info">What We Do</div>
     <div class="galery_services">
@@ -132,7 +135,7 @@
 
     </div>
   </section>
-
+  <script src="./script.js"></script>
 </body>
 
 </html>
