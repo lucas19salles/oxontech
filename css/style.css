@@ -13,7 +13,6 @@ body {
   background-image: url("../img/banner-pic.webp");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
 }
 
 h1,
@@ -150,7 +149,7 @@ nav a:hover {
 /* Services */
 .services {
   max-width: 1100px;
-  margin: 0 auto 40px auto;
+  margin: 40px auto 40px auto;
 }
 
 .title_services,
@@ -239,6 +238,7 @@ nav a:hover {
 }
 
 .resultados {
+  margin-top: 40px;
   flex: 1;
   padding: 0 40px;
 }
@@ -275,6 +275,57 @@ p.bar {
 }
 
 .barra {
+  width: 100%;
+}
+
+.last {
+  margin-bottom: 40px;
+}
+
+/* Security */
+.security {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+.security_info_left h2,
+.security_info_right h2 {
+  font-size: 1rem;
+  color: #0000ff;
+}
+
+.information ul,
+.information li {
+  display: grid;
+  grid-template-columns: 180px 180px;
+  font-size: 0.725rem;
+  gap: 10px;
+}
+
+.information ul:first-child {
+  margin-top: 20px;
+}
+
+.information li {
+  background: #fff;
+  border-radius: 4px;
+  display: flex;
+  width: 160px;
+  padding: 6px;
+}
+
+.security_info_left h3,
+.security_info_right h3 {
+  font-size: 1.6rem;
+  max-width: 460px;
+}
+
+.security_img_right img,
+.security_img_left img {
+  max-width: 360px;
   width: 100%;
 }
 
@@ -388,5 +439,15 @@ p.bar {
 
   .resultados h2 {
     margin-top: 10px;
+  }
+
+  .security {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 0px 40px;
+  }
+
+  .security_info_left h2 {
+    grid-row: 3/2;
   }
 }
