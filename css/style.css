@@ -31,7 +31,7 @@ ul {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   object-fit: cover;
 }
 
@@ -102,9 +102,9 @@ nav a:hover {
   font-size: 0.875rem;
 }
 
-.introducao a {
+.botao a {
   display: inline-flex;
-  margin-right: 10px;
+  margin-right: 14px;
   padding: 8px 20px;
   border: 1px solid #fff;
   position: relative;
@@ -120,7 +120,7 @@ nav a:hover {
   color: #fff;
 }
 
-.introducao a::before {
+.botao a::before {
   content: "";
   width: 0;
   height: 300%;
@@ -134,11 +134,11 @@ nav a:hover {
   z-index: -1;
 }
 
-.introducao a:hover::before {
+.botao a:hover::before {
   width: 105%;
 }
 
-.introducao a:hover {
+.botao a:hover {
   color: #222;
 }
 
@@ -183,9 +183,10 @@ nav a:hover {
 .solution {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  width: 340px;
-  height: auto;
+  width: 345px;
+  height: 240px;
   background: #fff;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
   border-radius: 4px;
@@ -233,12 +234,11 @@ nav a:hover {
 
 .desempenho_perfil img {
   flex: 1;
-  max-width: 580px;
-  width: 100%;
+  max-width: 100%;
+  width: 600px;
 }
 
 .resultados {
-  margin-top: 40px;
   flex: 1;
   padding: 0 40px;
 }
@@ -329,7 +329,7 @@ p.bar {
   width: 100%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   #btn_mobile {
     display: flex;
     padding: 0.5rem 1rem;
@@ -410,7 +410,7 @@ p.bar {
 
   .introducao h1 {
     margin-top: 20px;
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-align: center;
   }
 
@@ -425,16 +425,23 @@ p.bar {
     margin-top: 20px;
   }
 
-  .introducao a {
-    display: block;
-    width: 100px;
-    margin: 10px auto 20px auto;
+  .botao {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0 20px 0;
   }
 
   .desempenho {
     display: flex;
     flex-direction: column;
     padding: 0;
+  }
+
+  .desempenho_perfil img {
+    background: #000;
+    width: 100vw;
+    object-fit: cover;
   }
 
   .resultados h2 {
@@ -444,10 +451,27 @@ p.bar {
   .security {
     display: grid;
     grid-template-columns: auto;
-    padding: 0px 40px;
+    padding: 0 40px;
   }
 
-  .security_info_left h2 {
-    grid-row: 3/2;
+  .information ul,
+  .information li {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .security_info_left h3,
+  .security_info_right h3 {
+    font-size: 1.4rem;
+    margin-top: 10px;
+  }
+
+  .security_info_left p,
+  .security_info_right p {
+    font-size: 0.875rem;
+    margin-top: 10px;
+    line-height: 1.4;
   }
 }
